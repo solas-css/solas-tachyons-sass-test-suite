@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <title>Title ipsum dolor sit (39 characters)</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- <link rel="stylesheet" href="../../css/tachyons.css?1669040363485" media="all" />-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1669040363485" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="w-100 sans-serif ">
+<main class="bg-white black-70">
+  <article class="pa3 ph5-ns">
+    <h3 class="f6 ttu tracked mt0">White Space</h3>
+    <p class="measure f4 f3-ns lh-copy">
+      White space in css is used to control how whitespace is rendered.
+      Creative, I know.
+    </p>
+    <p class="measure f5 f4-ns lh-copy">
+      <b>Normal</b>
+      supresses white space characters and breaks lines based on the width of
+      the element or the placement of a br tag.<br />
+      <b>Nowrap</b>
+      will keep all text on one line - often used in conjunction with truncation
+      or a scrollbar. This can be useful for displaying unix style commands
+      where indicating everything is on one line is important for clarity.<br />
+      <b>Pre</b>
+      will preserve all whitespace and linebreaks. This is useful for displaying
+      code or poetry. Simulates the rendering of the pre tag.
+    </p>
+  </article>
+  <div class="ph3 ph5-ns pt4 pb5">
+    <h3 class="f5 mb4 pb2 bb">Examples</h3>
+    <p class="f5 f4-ns measure lh-copy">This text is formatted the same way in
+      the source and printed three times, with the only difference being which
+      white-space class is attached.</p>
+    <code class="f6 db">
+      &lt;p class="ws-normal"&gt;Content&lt;/p&gt;
+    </code>
+    <p class="ws-normal measure">
+
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet.
+
+    </p>
+    <h3 class="f5 fw4 mt4 code">.nowrap</h3>
+    <p class="nowrap measure truncate">
+      Typography is to literature as musical performance is to composition: an
+      essential act of interpretation, full of endless opportunities for insight
+      or obtuseness.
+    </p>
+    <h3 class="f5 book pt4 code">.pre</h3>
+    <p class="pre measure">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet.
+
+    </p>
+  </div>
+</main>
+
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>white-space.md</h1>\n","patternBreadcrumb":{"patternGroup":"typography","patternSubgroup":""},"patternExtension":"hbs","patternName":"White Space","patternPartial":"typography-white-space","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":11}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>white-space.md</h1>\n","patternBreadcrumb":{"patternGroup":"typography","patternSubgroup":""},"patternExtension":"hbs","patternName":"White Space","patternPartial":"typography-white-space","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":11}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1669040363485">
+  (function() {
+    if (self != top) {
+      var cb = '1669040363485';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1669040363485" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>

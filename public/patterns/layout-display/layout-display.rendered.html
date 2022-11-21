@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <title>Title ipsum dolor sit (39 characters)</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- <link rel="stylesheet" href="../../css/tachyons.css?1669040363485" media="all" />-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1669040363485" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="w-100 sans-serif ">
+<main class="bg-white black-70">
+  <article class="pa3 ph5-ns">
+    <h3 class="f6 ttu tracked mt0">Display</h3>
+    <p class="measure f3 lh-copy">
+      Single purpose classes for setting the display of an element at any
+      breakpoint.
+    </p>
+    <blockquote class="i measure f4 lh-copy mh0">
+      The display property defines box’s display type, which consists of the two
+      basic qualities of how an element generates boxes: the inner display type,
+      which defines the kind of formatting context it generates, dictating how
+      its descendant boxes are laid out. the outer display type, which dictates
+      how the box participates in its parent formatting context.
+      <footer class="f6">
+        -
+        <a
+          href="https://www.w3.org/TR/css-display-3/#the-display-properties"
+          class="link dim black-70 i"
+        >css3 Display Module Spec</a>
+      </footer>
+    </blockquote>
+  </article>
+  <div class="ph3 ph5-ns pt4 pb5">
+    <h3 class="f5 mb4 pb2 bb">Examples</h3>
+    <h3 class="f5 book pt4 caps">Display Block</h3>
+    <code class="f6 db">.db { display: block; }</code>
+    <code class="f6">
+      &lt;span class="db"&gt;&lt;/span&gt;
+    </code>
+    <p class="measure lh-copy">Block will inherently set width to 100% of its
+      parent element. It will also cause a line break, even if the declared
+      width doesn’t take up the full width of the parent.</p>
+    <div class="db bg-black-10 mb2">
+      block
+    </div>
+    <div class="db bg-black-10 mb2 mw4">
+      block
+    </div>
+
+    <h3 class="f5 book pt4 caps">Display Inline-Block</h3>
+    <code class="f6 db">.dib { display: inline-block; }</code>
+    <code class="f6">
+      &lt;span class="dib"&gt;&lt;/span&gt;
+    </code>
+    <p class="measure lh-copy">
+      Inline-block will wrap around content inline. It also allows you to set
+      height and width properties on the element, which display inline does not
+      allow you to do. It does render the white-space inbeween elements, so if
+      you set width: 25% to four elements they will not just render as a 4
+      column layout by default.
+    </p>
+    <div class="dib bg-black-10 mb2">
+      display: inline-block
+    </div>
+    <div class="dib bg-black-10 mb2">
+      display: inline-block
+    </div>
+    <div class="dib bg-black-10 mb2">
+      display: inline-block
+    </div>
+    <div class="dib bg-black-10 mb2">
+      display: inline-block
+    </div>
+
+    <h3 class="f5 book pt4 caps">Display Inline</h3>
+    <code class="f6 db">.di { display: inline; }</code>
+    <code class="f6">
+      &lt;div class="di"&gt;&lt;/div&gt;
+    </code>
+    <p class="measure lh-copy">
+      Set content inline. Inline doesn’t respect height or width values. It does
+      not render white space between elements.
+    </p>
+    <div class="di bg-black-10 mb2">
+      display: inline
+    </div>
+    <div class="di bg-black-10 mb2">
+      display: inline
+    </div>
+    <div class="di bg-black-10 mb2">
+      display: inline
+    </div>
+    <div class="di bg-black-10 mb2">
+      display: inline
+    </div>
+
+    <h3 class="f5 book pt4 caps">Display Table</h3>
+    <code class="f6 db">.dt { display: table; }
+      <br />
+      .dtc { display: table-cell; }
+    </code>
+    <code class="f6">
+      &lt;div class="dt"&gt;<br />
+      &nbsp;&nbsp; &lt;div class="dtc"&gt;&lt;/div&gt;<br />
+      &nbsp;&nbsp; &lt;div class="dtc"&gt;&lt;/div&gt;<br />
+      &lt;/div&gt;
+    </code>
+    <p class="measure lh-copy">
+      The display table can be combined with display table-cell to render a
+      table without table markup. This can be useful for vertically aligning
+      content or for auto-calculating a variable number of table cells. To
+      auto-calculate even widths for all cells, you must extend display table
+      with
+      <code>.dt--fixed</code>
+      to set table-layout: fixed.
+    </p>
+    <div class="dt bg-black-10 mb2 w-100">
+      <div class="dtc v-mid pa1 bg-black-10">display</div>
+      <div class="dtc v-mid pa1 bg-black-20">table</div>
+      <div class="dtc v-mid pa1 bg-black-10">will automatically</div>
+      <div class="dtc v-mid pa1 bg-black-20">compute cell width</div>
+    </div>
+    <h3 class="f5 book pt4 caps">Display Table</h3>
+    <code class="f6">
+      &lt;div class="dt dt--fixed w-100"&gt;<br />
+      &nbsp;&nbsp; &lt;div class="dtc"&gt;&lt;/div&gt;<br />
+      &nbsp;&nbsp; &lt;div class="dtc"&gt;&lt;/div&gt;<br />
+      &lt;/div&gt;
+    </code>
+    <div class="dt dt--fixed bg-black-10 mb2 w-100">
+      <div class="dtc v-mid pa1 bg-black-10">display table</div>
+      <div class="dtc v-mid pa1 bg-black-20">with table-layout: fixed</div>
+      <div class="dtc v-mid pa1 bg-black-10">will automatically</div>
+      <div class="dtc v-mid pa1 bg-black-20">make every cell the same width
+        regardless of the content</div>
+    </div>
+    <h3 class="f5 book pt4 caps">Display None</h3>
+    <code class="f6 db">.dn { display: none; }</code>
+    <code class="f6">
+      &lt;div class="dn"&gt;&lt;/div&gt;
+    </code>
+    <p class="measure lh-copy">
+      You can set the display of any element to none by tacking on the
+      <code class="code">dn</code>
+      class.
+    </p>
+  </div>
+</main>
+
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>display.md</h1>\n","patternBreadcrumb":{"patternGroup":"layout","patternSubgroup":""},"patternExtension":"hbs","patternName":"Display","patternPartial":"layout-display","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":6}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>display.md</h1>\n","patternBreadcrumb":{"patternGroup":"layout","patternSubgroup":""},"patternExtension":"hbs","patternName":"Display","patternPartial":"layout-display","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":6}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1669040363485">
+  (function() {
+    if (self != top) {
+      var cb = '1669040363485';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1669040363485" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>

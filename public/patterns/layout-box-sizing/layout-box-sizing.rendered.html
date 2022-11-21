@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <title>Title ipsum dolor sit (39 characters)</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- <link rel="stylesheet" href="../../css/tachyons.css?1669040363485" media="all" />-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1669040363485" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="w-100 sans-serif ">
+<main class="bg-white black-70">
+  <article class="pa3 ph5-ns">
+    <h3 class="f6 ttu tracked mt0">Box Sizing</h3>
+    <p class="measure f4 lh-copy">
+      The box model has been known to trip up a few people. This module should
+      make things a bit easier.
+    </p>
+    <p class="measure f5 lh-copy">
+      While many people make fun of Microsoft’s ‘Internet Explorer’ browser -
+      the one thing that most css authors agree on is that it’s the most
+      favorable box model. Fortunately the box-sizing property is well supported
+      now so we can fix the atrocity that is the box model that chrome, firefox,
+      safari, and others have implemented in modern browsers.
+    </p>
+    <p class="measure f5 lh-copy">
+      While the * { box-sizing: border-box; } hack has become quite popular -
+      not all elements (think form inputs) benefit from this box model. This
+      module only applies the border-box model to certain elements as listed
+      below. There is also a .border-box class you can apply to elements as
+      needed.
+    </p>
+    <p class="measure f5 lh-copy">
+      The benefit of border-box as opposed to content-box (which is the default
+      per the css spec) is that when you declare a width, that is the width of
+      the element, regardless of how much border or padding you add to the
+      element.
+    </p>
+  </article>
+  <div class="ph3 ph5-ns pt4 pb5">
+    <h3 class="f5 mb4 pb2 bb">Examples</h3>
+    <h3 class="f5 fw6 pt4 caps">Default Content Box</h3>
+    <div
+      class="ph3 mw5 ba bw4 phxl pvm bg-lightest-red"
+      style="box-sizing: content-box;"
+    >
+      This element has a thick border, a max-width class of mw5, and extra large
+      horizontal padding and medium vertical padding.
+    </div>
+    <h3 class="f5 fw6 pt4 caps">Border Box</h3>
+    <div class="ph3 mw5 ba bw4 phxl pvm bg-lightest-red">
+      This element has a thick border, a max-width class of mw5, and extra large
+      horizontal padding and medium vertical padding.
+    </div>
+    <h3 class="f5 fw6 pt4 caps">Border Box with no padding or border</h3>
+    <div class="ph3 mw5 bg-lightest-red">
+      This element has no border, a max-width class of mw5 and no padding.
+      Notice which example it has the same width as.
+    </div>
+  </div>
+</main>
+
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>box-sizing.md</h1>\n","patternBreadcrumb":{"patternGroup":"layout","patternSubgroup":""},"patternExtension":"hbs","patternName":"Box Sizing","patternPartial":"layout-box-sizing","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":3}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>box-sizing.md</h1>\n","patternBreadcrumb":{"patternGroup":"layout","patternSubgroup":""},"patternExtension":"hbs","patternName":"Box Sizing","patternPartial":"layout-box-sizing","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":3}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1669040363485">
+  (function() {
+    if (self != top) {
+      var cb = '1669040363485';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1669040363485" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>

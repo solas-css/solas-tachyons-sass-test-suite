@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <title>Title ipsum dolor sit (39 characters)</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- <link rel="stylesheet" href="../../css/tachyons.css?1669040363485" media="all" />-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1669040363485" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="w-100 sans-serif ">
+<main class="bg-white black-70">
+  <article class="pa3 ph5-ns">
+    <h3 class="f6 ttu tracked mt0">Flex</h3>
+    <p class="measure f5 f4-ns lh-copy">
+      Flex can be used to achieve powerful horizontal or vertical layouts
+      without JavaScript.
+    </p>
+
+    <div class="mt4 mt5-ns">
+      <h3 class="f5 mb4 pb2 bb">Container Examples</h3>
+      <h4 class="f6 mb2 mt4">Flex</h4>
+
+      <p class="measure f5 lh-copy">
+        Declaring the class
+        <code>flex</code>
+        on an element will squeeze all its children into a single row.
+      </p>
+
+      <div class="flex flex-wrap">
+        <div class="w-100 w-50-l">
+          <code class="f6 pre mb3">
+            &lt;div class="flex"&gt; &lt;div class="outline w-25 pa3 mr2"&gt;
+            &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div class="outline w-25
+            pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3 mr2"&gt; &lt;code&gt;3&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2"&gt;
+            &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div class="outline w-25
+            pa3"&gt; &lt;code&gt;5&lt;/code&gt; &lt;/div&gt; &lt;/div&gt;
+          </code>
+        </div>
+
+        <div class="w-100 w-50-ns pl3-l">
+          <div class="flex mt3">
+            <div class="outline w-25 pa3 mr2">
+              <code>1</code>
+            </div>
+            <div class="outline w-25 pa3 mr2">
+              <code>2</code>
+            </div>
+            <div class="outline w-25 pa3 mr2">
+              <code>3</code>
+            </div>
+            <div class="outline w-25 pa3 mr2">
+              <code>4</code>
+            </div>
+            <div class="outline w-25 pa3">
+              <code>5</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="f6 mb2 mt4">Flex wrap</h4>
+
+      <p class="mt3 measure f5 lh-copy">
+        Specifying
+        <code>flex-wrap</code>
+        will cause child elements to wrap to multiple rows once they take more
+        width than their parent.
+      </p>
+
+      <div class="flex flex-wrap">
+        <div class="w-100 w-50-ns">
+          <code class="f6 pre mb3">
+            &lt;div class="flex flex-wrap"&gt; &lt;div class="outline w-25 pa3
+            mr2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2"&gt;
+            &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div class="outline w-25
+            pa3 mr2"&gt; &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3"&gt; &lt;code&gt;5&lt;/code&gt; &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <div class="w-100 w-50-l pl3-l">
+          <div class="flex flex-wrap mt3">
+            <div class="outline w-25 pa3 mr2">
+              <code>1</code>
+            </div>
+            <div class="outline w-25 pa3 mr2">
+              <code>2</code>
+            </div>
+            <div class="outline w-25 pa3 mr2">
+              <code>3</code>
+            </div>
+            <div class="outline w-25 pa3 mr2 mt2">
+              <code>4</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>5</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="f6 mb2 mt4">Flex wrap reverse</h4>
+
+      <p class="measure f5 lh-copy">
+        Specifying
+        <code>flex-wrap-reverse</code>
+        reverses the ordering of rows.
+      </p>
+
+      <div class="flex flex-wrap">
+        <div class="w-100 w-50-ns">
+          <code class="f6 pre">
+            &lt;div class="flex flex-wrap-reverse"&gt; &lt;div class="outline
+            w-25 pa3 mr2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2"&gt;
+            &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div class="outline w-25
+            pa3 mr2"&gt; &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3"&gt; &lt;code&gt;5&lt;/code&gt; &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <div class="w-100 w-50-l pl3-l">
+          <div class="flex flex-wrap-reverse mt3">
+            <div class="outline w-25 pa3 mr2">
+              <code>1</code>
+            </div>
+            <div class="outline w-25 pa3 mr2">
+              <code>2</code>
+            </div>
+            <div class="outline w-25 pa3 mr2">
+              <code>3</code>
+            </div>
+            <div class="outline w-25 pa3 mr2 mb2">
+              <code>4</code>
+            </div>
+            <div class="outline w-25 pa3 mb2">
+              <code>5</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="f6 mb2 mt4">Flex column</h4>
+
+      <p class="measure f5 lh-copy">
+        Column layouts are achievable with
+        <code>flex-column</code>.
+      </p>
+
+      <div class="flex flex-wrap">
+        <div class="w-100 w-50-ns">
+          <code class="f6 pre">
+            &lt;div class="flex flex-column"&gt; &lt;div class="outline w-25 pa3
+            mr2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2"&gt;
+            &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div class="outline w-25
+            pa3 mr2"&gt; &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3"&gt; &lt;code&gt;5&lt;/code&gt; &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <div class="w-100 w-50-l pl3-l">
+          <div class="flex flex-column mt3">
+            <div class="outline w-25 pa3 mt2">
+              <code>1</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>2</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>3</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>4</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>5</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="f6 mb2 mt4">Flex column reverse</h4>
+
+      <p class="measure f5 lh-copy">
+        Reverse the column layout with
+        <code>flex-column-reverse</code>.
+      </p>
+
+      <div class="flex flex-wrap">
+        <div class="w-100 w-50-ns">
+          <code class="f6 pre">
+            &lt;div class="flex flex-column-reverse"&gt; &lt;div class="outline
+            w-25 pa3 mr2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2"&gt;
+            &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div class="outline w-25
+            pa3 mr2"&gt; &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3"&gt; &lt;code&gt;5&lt;/code&gt; &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+
+        <div class="w-100 w-50-l pl3-l">
+          <div class="flex flex-column-reverse mt3">
+            <div class="outline w-25 pa3 mt2">
+              <code>1</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>2</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>3</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>4</code>
+            </div>
+            <div class="outline w-25 pa3 mt2">
+              <code>5</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="f6 mb2 mt4">Compose it all together</h4>
+
+      <p class="measure f5 lh-copy">
+        Interesting layouts can be achieved when composing these container
+        examples together.
+      </p>
+
+      <div class="flex flex-wrap">
+        <div class="w-100 w-50-ns">
+          <code class="f6 pre">
+            &lt;div class="flex items-center"&gt; &lt;div class="outline w-25
+            pa3 mr2 mt2 self-end"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt;
+            &lt;div class="flex flex-column-reverse w-50"&gt; &lt;div
+            class="outline w-100 pa3 mt2"&gt; &lt;code&gt;1&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-100 pa3 mt2"&gt;
+            &lt;code&gt;2&lt;/code&gt; &lt;/div&gt; &lt;div class="outline w-100
+            pa3 mt2"&gt; &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div
+            class="outline w-100 pa3 mt2"&gt; &lt;code&gt;4&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-100 pa3 mt2"&gt;
+            &lt;code&gt;5&lt;/code&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
+            class="outline w-25 pa3 ml2 mt2"&gt; &lt;code&gt;1&lt;/code&gt;
+            &lt;/div&gt; &lt;div class="outline w-25 pa3 ml2 mt2 self-start"&gt;
+            &lt;code&gt;2&lt;/code&gt; &lt;/div&gt; &lt;/div&gt;
+          </code>
+        </div>
+
+        <div class="w-100 w-50-l pl3-l mt3">
+          <div class="flex items-center">
+            <div class="outline w-25 pa3 mr2 mt2 self-end">
+              <code>1</code>
+            </div>
+            <div class="flex flex-column-reverse w-50">
+              <div class="outline w-100 pa3 mt2">
+                <code>1</code>
+              </div>
+              <div class="outline w-100 pa3 mt2">
+                <code>2</code>
+              </div>
+              <div class="outline w-100 pa3 mt2">
+                <code>3</code>
+              </div>
+              <div class="outline w-100 pa3 mt2">
+                <code>4</code>
+              </div>
+              <div class="outline w-100 pa3 mt2">
+                <code>5</code>
+              </div>
+            </div>
+            <div class="outline w-25 pa3 ml2 mt2">
+              <code>1</code>
+            </div>
+            <div class="outline w-25 pa3 ml2 mt2 self-start">
+              <code>2</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="f5 mb4 pb2 bb">Align items</h3>
+
+        <h4 class="f6 mb2 mt4">Center</h4>
+
+        <p class="measure f5 lh-copy">
+          Pack items from the center with
+          <code>items-center</code>
+        </p>
+
+        <div class="flex flex-wrap">
+          <div class="w-100 w-50-ns">
+            <code class="f6 pre">
+              &lt;div class="flex items-center"&gt; &lt;div class="outline w-25
+              pa3 mr2 h2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+              class="outline w-25 pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt;
+              &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2 h4"&gt;
+              &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div class="outline
+              w-25 pa3 mr2"&gt; &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div
+              class="outline w-25 pa3 h5"&gt; &lt;code&gt;5&lt;/code&gt;
+              &lt;/div&gt; &lt;/div&gt;
+            </code>
+          </div>
+
+          <div class="w-100 w-50-l pl3-l">
+            <div class="outline pa3 flex items-center mt3">
+              <div class="outline w-25 pa3 mr2 h3">
+                <code>1</code>
+              </div>
+              <div class="outline w-25 pa3 mr2">
+                <code>2</code>
+              </div>
+              <div class="outline w-25 pa3 mr2 h4">
+                <code>3</code>
+              </div>
+              <div class="outline w-25 pa3 mr2">
+                <code>4</code>
+              </div>
+              <div class="outline w-25 pa3 mb2 h5">
+                <code>5</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="f6 mb2 mt4">Start</h4>
+
+        <p class="measure f5 lh-copy">
+          Pack items from the start with
+          <code>items-start</code>
+        </p>
+
+        <div class="flex flex-wrap">
+          <div class="w-100 w-50-ns">
+            <code class="f6 pre">
+              &lt;div class="flex items-start"&gt; &lt;div class="outline w-25
+              pa3 mr2 h2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+              class="outline w-25 pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt;
+              &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2 h4"&gt;
+              &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div class="outline
+              w-25 pa3 mr2"&gt; &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div
+              class="outline w-25 pa3 h5"&gt; &lt;code&gt;5&lt;/code&gt;
+              &lt;/div&gt; &lt;/div&gt;
+            </code>
+          </div>
+
+          <div class="w-100 w-50-l pl3-l">
+            <div class="outline pa2 flex items-start mt3">
+              <div class="outline w-25 pa3 mr2 h3">
+                <code>1</code>
+              </div>
+              <div class="outline w-25 pa3 mr2">
+                <code>2</code>
+              </div>
+              <div class="outline w-25 pa3 mr2 h4">
+                <code>3</code>
+              </div>
+              <div class="outline w-25 pa3 mr2 mb2">
+                <code>4</code>
+              </div>
+              <div class="outline w-25 pa3 h5">
+                <code>5</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="f6 mb2 mt4">End</h4>
+
+        <p class="measure f5 lh-copy">
+          Pack items from the end with
+          <code>items-end</code>
+        </p>
+
+        <div class="flex flex-wrap">
+          <div class="w-100 w-50-ns">
+            <code class="f6 pre">
+              &lt;div class="flex items-end"&gt; &lt;div class="outline w-25 pa3
+              mr2 h2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+              class="outline w-25 pa3 mr2"&gt; &lt;code&gt;2&lt;/code&gt;
+              &lt;/div&gt; &lt;div class="outline w-25 pa3 mr2 h4"&gt;
+              &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;div class="outline
+              w-25 pa3 mr2"&gt; &lt;code&gt;4&lt;/code&gt; &lt;/div&gt; &lt;div
+              class="outline w-25 pa3 h5"&gt; &lt;code&gt;5&lt;/code&gt;
+              &lt;/div&gt; &lt;/div&gt;
+            </code>
+          </div>
+
+          <div class="w-100 w-50-l pl3-l">
+            <div class="outline pa2 flex items-end mt3">
+              <div class="outline w-25 pa3 mr2 h3">
+                <code>1</code>
+              </div>
+              <div class="outline w-25 pa3 mr2">
+                <code>2</code>
+              </div>
+              <div class="outline w-25 pa3 mr2 h4">
+                <code>3</code>
+              </div>
+              <div class="outline w-25 pa3 mr2">
+                <code>4</code>
+              </div>
+              <div class="outline w-25 pa3 h5">
+                <code>5</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="f5 mb4 pb2 bb">Justify content</h3>
+          <h4 class="f6 mb2 mt4">Center</h4>
+
+          <p class="measure f5 lh-copy">
+
+          </p>
+
+          <div class="flex">
+            <div class="w-100 w-50-l">
+              <code class="f6 pre mb3">
+                &lt;div class="flex justify-center"&gt; &lt;div class="outline
+                w-25 pa3 mr2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt;
+                &lt;div class="outline w-25 pa3 mr2"&gt;
+                &lt;code&gt;2&lt;/code&gt; &lt;/div&gt; &lt;div class="outline
+                w-25 pa3 mr2"&gt; &lt;code&gt;3&lt;/code&gt; &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </div>
+
+            <div class="w-100 w-50-ns pl3-l">
+              <div class="outline flex justify-center mt3 pv2">
+                <div class="outline w-25 pa3 mr2">
+                  <code>1</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>2</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>3</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="f6 mb2 mt4">Between</h4>
+
+          <p class="mt3 measure f5 lh-copy">
+
+          </p>
+
+          <div class="flex flex-wrap">
+            <div class="w-100 w-50-ns">
+              <code class="f6 pre mb3">
+                &lt;div class="flex justify-between"&gt; &lt;div class="outline
+                w-25 pa3"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt; &lt;div
+                class="outline w-25 pa3"&gt; &lt;code&gt;2&lt;/code&gt;
+                &lt;/div&gt; &lt;div class="outline w-25 pa3"&gt;
+                &lt;code&gt;3&lt;/code&gt; &lt;/div&gt; &lt;/div&gt;
+              </code>
+            </div>
+
+            <div class="w-100 w-50-l pl3-l">
+              <div class="outline flex justify-between mt3 pv2">
+                <div class="outline w-25 pa3">
+                  <code>1</code>
+                </div>
+                <div class="outline w-25 pa3">
+                  <code>2</code>
+                </div>
+                <div class="outline w-25 pa3">
+                  <code>3</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="f6 mb2 mt4">Around</h4>
+
+          <p class="measure f5 lh-copy">
+
+          </p>
+
+          <div class="flex flex-wrap">
+            <div class="w-100 w-50-ns">
+              <code class="f6 pre">
+                &lt;div class="flex justify-around"&gt; &lt;div class="outline
+                w-25 pa3 mr2"&gt; &lt;code&gt;1&lt;/code&gt; &lt;/div&gt;
+                &lt;div class="outline w-25 pa3 mr2"&gt;
+                &lt;code&gt;2&lt;/code&gt; &lt;/div&gt; &lt;div class="outline
+                w-25 pa3 mr2"&gt; &lt;code&gt;3&lt;/code&gt; &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </div>
+
+            <div class="w-100 w-50-l pl3-l">
+              <div class="outline flex justify-around mt3 pv2">
+                <div class="outline w-25 pa3 mr2">
+                  <code>1</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>2</code>
+                </div>
+                <div class="outline w-25 pa3 mr2">
+                  <code>3</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>flexbox.md</h1>\n","patternBreadcrumb":{"patternGroup":"layout","patternSubgroup":""},"patternExtension":"hbs","patternName":"Flexbox","patternPartial":"layout-flexbox","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":10}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>flexbox.md</h1>\n","patternBreadcrumb":{"patternGroup":"layout","patternSubgroup":""},"patternExtension":"hbs","patternName":"Flexbox","patternPartial":"layout-flexbox","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":10}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1669040363485">
+  (function() {
+    if (self != top) {
+      var cb = '1669040363485';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1669040363485" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>
