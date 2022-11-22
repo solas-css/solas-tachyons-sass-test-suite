@@ -4,7 +4,11 @@
   "description": "Test suite for tachyons-sass-haru",
   "main": "index.js",
   "scripts": {
-    "build:tachyons": "sass ./node_modules/tachyons-sass-haru/tachyons.scss ./source/css/tachyons.css",
+    "backstop:approve": "backstop approve --config=tests/mainConfig.js",
+    "backstop:test": "npm run clean:bitmaps_test && backstop test --config=tests/mainConfig.js",
+    "clean:bitmaps_test": "rm -rf test/backstop_data/bitmaps_test",
+    "test": "npm run backstop:test",
+    "build:tachyons": "sass ./node_modules/tachyons-sass-haru/tachyons.scss ./source/css/vendor/tachyons.css",
     "build:uikit": "cross-env-shell PL_CONFIG_PATH='${INIT_CWD}/.patternlabrc.js' npm run build --prefix node_modules/@pattern-lab/uikit-workshop -- --patternlabrc '$PL_CONFIG_PATH'",
     "build": "patternlab build --config ./patternlab-config.json",
     "help": "patternlab --help",
