@@ -21,18 +21,9 @@
     "tools-docs": false
   },
   "ishViewportRange": {
-    "s": [
-      240,
-      500
-    ],
-    "m": [
-      500,
-      800
-    ],
-    "l": [
-      800,
-      2600
-    ]
+    "s": [240, 500],
+    "m": [500, 800],
+    "l": [800, 2600]
   },
   "logLevel": "info",
   "outputFileSuffixes": {
@@ -40,6 +31,7 @@
     "rawTemplate": "",
     "markupOnly": ".markup-only"
   },
+
   "paths": {
     "source": {
       "root": "./source/",
@@ -73,11 +65,7 @@
     }
   },
   "patternExtension": "hbs",
-  "patternStateCascade": [
-    "inprogress",
-    "inreview",
-    "complete"
-  ],
+  "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternExportAll": false,
   "patternExportDirectory": "pattern_exports",
   "patternExportPatternPartials": [],
