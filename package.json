@@ -41,11 +41,11 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
-    "prettier": "^2.7.1",
-    "sass": "^1.56.1",
-    "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru"
+    "prettier": "^2.7.1"
   },
   "dependencies": {
+    "sass": "^1.56.1",
+    "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru",
     "@pattern-lab/cli": "^5.17.0",
     "@pattern-lab/core": "^5.17.0",
     "@pattern-lab/engine-handlebars": "^5.16.4",
