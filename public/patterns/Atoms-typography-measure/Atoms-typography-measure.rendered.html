@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <title>Tachyons-sass-haru regression tests</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- <link rel="stylesheet" href="../../css/vendor/tachyons.css?1669756226287" media="all" />-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1669756226287" media="all" />
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="w-100 sans-serif ">
+<main class="bg-white black-70">
+  <article class="ph3 ph5-ns cf mt0">
+    <h3 class="f3 bb">Measure</h3>
+    <div class="w-100 w-50-l">
+      <p class="measure f5 lh-copy mb2">
+        Tachyons provides 3 classes for setting measure.
+      </p>
+
+      <code class="pre f6 lh-copy mt0 b">
+.measure = line lengths ~66 characters
+.measure-narrow = line lengths ~45 characters
+.measure-wide = line lengths ~80 characters
+      </code>
+    </div>
+  </article>
+  <div class="ph3 ph5-ns">
+    <h4 class="f4 bt pt5 mt2 mb0">6rem/96px at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f-headline measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="w-100 overflow-auto">
+      <p class="f-headline measure lh-title mt4">
+        Designers create
+        <span class="dn di-ns">hierarchy and contrast by playing with the scale
+          of letterforms.</span>
+      </p>
+    </div>
+    <h4 class="f4 pt5 bt mt2 mb0">5rem/80px at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f-subheadline measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="w-100 overflow-x-scroll">
+      <p class="f-subheadline measure lh-title mt4">
+        Designers create
+        <span class="dn di-ns">hierarchy and contrast by playing with the scale
+          of letterforms.</span>
+      </p>
+    </div>
+    <h4 class="f4 pt5 bt mt2 mb0"> 3rem(48px) at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f1 measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="pb4 w-100 overflow-x-scroll">
+      <p class="f1 measure lh-title mt4">
+        Designers create hierarchy and contrast
+        <span class="dn di-ns">by playing with the scale of letterforms. Changes
+          in scale help create visual contrast, movement, and depth as well as
+          express hierarchies of importance.</span>
+      </p>
+    </div>
+    <h4 class="f4 pt5 bt mt2 mb0">2.25rem (36px) at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f2 measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="cf w-100 pb4">
+      <div class="w-100">
+        <p class="f2 measure lh-copy">
+          Designers create hierarchy and contrast
+          <span class="dn di-ns">by playing with the scale of letterforms.
+            Changes in scale help create visual contrast, movement, and depth as
+            well as express hierarchies of importance.</span>
+        </p>
+      </div>
+    </div>
+    <h4 class="f4 pt5 bt mt2 mb0">1.5rem (24px) at 34em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f3 measure-wide"&gt;Title&lt;/h3&gt;
+    </code>
+    <p class="f3 measure-wide lh-copy">
+      Designers create hierarchy and contrast
+      <span class="dn di-ns">by playing with the scale of letterforms. Changes
+        in scale help create visual contrast, movement, and depth as well as
+        express hierarchies of importance.</span>
+    </p>
+    <h4 class="f4 mt2 pt5 mb0">1.5rem (24px) at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f3 measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="cf w-100 pb4">
+      <div class="w-100 pr0 pr4-l cf">
+        <p class="f3 measure lh-copy">
+          Designers create hierarchy and contrast
+          <span class="dn di-ns">by playing with the scale of letterforms.
+            Changes in scale help create visual contrast, movement, and depth as
+            well as express hierarchies of importance.</span>
+        </p>
+      </div>
+      <h4 class="f4 pt5 mt2 mb0">1.5rem (24px) at 20em</h4>
+      <code class="pre f6 mv0 b"><pre>
+&lt;h3 class="f3 measure-narrow"&gt;Title&lt;/h3&gt;
+      </pre></code>
+      <div class="dib f4 measure-narrow mr4">
+        <p class="f3 lh-title">
+          Designers create hierarchy and contrast. Changes in scale help create
+          visual contrast, movement, and depth as well as express hierarchies of
+          importance.
+        </p>
+      </div>
+      <div class="dib f4 measure-narrow">
+        <p class="f3 lh-title">
+          Designers create hierarchy and contrast. Changes in scale help create
+          visual contrast, movement, and depth as well as express hierarchies of
+          importance.
+        </p>
+      </div>
+    </div>
+    <h4 class="f4 mt2 pt5 bt mb0">1.25rem/20px at 34em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f4 measure-wide"&gt;Title&lt;/h3&gt;
+    </code>
+    <p class="f4 measure-wide lh-copy">
+      Designers create hierarchy and contrast. Changes in scale help create
+      visual contrast, movement, and depth as well as express hierarchies of
+      importance.
+    </p>
+    <h4 class="f4 pt4 mt2 mb0">1.25rem/20px at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f4 measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="pb4">
+      <p class="f4 measure lh-copy">
+        Designers create hierarchy and contrast. Changes in scale help create
+        visual contrast, movement, and depth as well as express hierarchies of
+        importance.
+      </p>
+      <h4 class="f4 mt4 mb0">1.25rem (20px) at 20em</h4>
+
+      <code class="pre f6 mv0 b"><pre>
+&lt;h3 class="f4 measure-narrow"&gt;Title&lt;/h3&gt;
+      </pre></code>
+      <div class="dib f4 measure-narrow mr5 v-top">
+        <p class="f4 lh-copy">
+          Scale is the size of design elements in comparison to other elements
+          in a layout as well as to the physical context of the work. Scale is
+          relative. 12-pt type displayed on a 32-inch monitor can look very
+          small, while 12-pt type printed on a book page can look flabby and
+          overweight.
+        </p>
+      </div>
+      <div class="dib f4 measure-narrow v-top">
+        <p class="f4 lh-copy">
+          Designers create hierarchy and contrast by playing with the scale of
+          letterforms. Changes in scale help create visual contrast, movement,
+          and depth as well as express hierarchies of importance. Scale is
+          physical. People intuitively judge the size of objects in relation to
+          their own bodies and environments.
+        </p>
+      </div>
+    </div>
+    <h4 class="f4 pt5 bt mt2 mb0">1rem (16px) at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f5 measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="pb4">
+      <p class="f5 measure lh-copy v-top">Scale is the size of design elements
+        in comparison to other elements in a layout as well as to the physical
+        context of the work. Scale is relative. 12-pt type displayed on a
+        32-inch monitor can look very small, while 12-pt type printed on a book
+        page clook flabby and overweight.</p>
+      <h4 class="f4 mt4 mb0">1rem (16px) at 20em</h4>
+      <code class="pre f6 mv0 b"><pre>
+&lt;h3 class="f5 measure-narrow"&gt;Title&lt;/h3&gt;
+      </pre></code>
+      <div class="dib f5 measure-narrow mr4 v-top">
+        <p class="f5 lh-copy">Designers create hierarchy and contrast by playing
+          with the scale of letterforms. Changes in scale help create visual
+          contrast, movement, and depth as well as express hierarchies of
+          importance. Scale is physical. People intuitively judge the size of
+          objects in relation to their own bodies and environments.</p>
+      </div>
+      <div class="dib f5 measure-narrow v-top">
+        <p class="f5 lh-copy">Scale is the size of design elements in comparison
+          to other elements in a layout as well as to the physical context of
+          the work. Scale is relative. 12-pt type displayed on a 32-inch monitor
+          can look very small, while 12-pt type printed on a book page can look
+          flabby and overweight.</p>
+      </div>
+    </div>
+    <h4 class="f4 pt5 mt2 mb0 bt">.875rem (14px) at 34em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f6 measure-wide"&gt;Title&lt;/h3&gt;
+    </code>
+    <p class="f6 measure-wide lh-copy">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet.
+    </p>
+    <h4 class="f4 pt4 mt2 mb0">.875rem (14px) at 30em</h4>
+    <code class="pre f6 mv0 b">
+&lt;h3 class="f6 measure"&gt;Title&lt;/h3&gt;
+    </code>
+    <div class="pb4">
+      <p class="f6 measure lh-copy">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet.
+      </p>
+      <h4 class="f4 pt4 mt2 mb0">.875rem (14px) at 20em</h4>
+
+      <code class="pre f6 mv0 b"><pre>
+&lt;h3 class="f6 measure-narrow"&gt;Title&lt;/h3&gt;
+      </pre></code>
+      <div class="dib f5 measure-narrow mr4 v-top">
+        <p class="f6 lh-copy">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="dib f5 measure-narrow v-top">
+        <p class="f6 lh-copy">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+      </div>
+    </div>
+    <h4 class="pt5 bt">Truncation</h4>
+    <p>If you want to truncate text that exceeds past a certain width you can
+      use the truncate class combined with a width</p>
+    <code class="pre f6 mv0 b">&lt;p class="mw4 truncate"&gt;&lt;/p&gt;</code>
+    <p class="mw4 truncate">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet.
+    </p>
+  </div>
+</main>
+
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"Atoms","patternSubgroup":"typography"},"patternExtension":"hbs","patternName":"Measure","patternPartial":"Atoms-measure","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"Atoms","patternSubgroup":"typography"},"patternExtension":"hbs","patternName":"Measure","patternPartial":"Atoms-measure","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":2}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1669756226287">
+  (function() {
+    if (self != top) {
+      var cb = '1669756226287';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1669756226287" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+  <head>
+    <title>Tachyons-sass-haru regression tests</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- <link rel="stylesheet" href="../../css/vendor/tachyons.css?1669756226287" media="all" />-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1669756226287" media="all" />
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="w-100 sans-serif ">
+<main class="bg-white black-70">
+  <div class="ph3 ph5-ns pt4 pb5">
+    <h3 class="f3 bb">Text Alignment</h3>
+    <h4 class="f4">Vertical Align</h4>
+    <h5 class="f5 mt4">Table Alignment</h5>
+    <p class="measure lh-copy">You can use vertical alignment classes on either
+      td elements or on elements with a class of
+      <code>dtc</code>
+      that are direct children of an element with a class of
+      <code>dt</code>.
+    </p><table border="0" cellspacing="8" cellpadding="8">
+      <tbody><tr>
+          <td class="measure bg-light-red">
+            <img width="128" src="../../images/over-canvas.jpg" />
+          </td>
+          <td class="v-mid bg-black-025">
+            <code class="db f6 b">.v-mid</code>
+            Align text to the middle.
+          </td>
+        </tr>
+        <tr class="bt b--white bw3">
+          <td class="bg-light-red">
+            <img width="128" src="../../images/over-canvas.jpg" />
+          </td>
+          <td class="v-top bg-black-025">
+            <code class="db f6 b">.v-top</code>
+            Align text to the top.
+          </td>
+        </tr>
+        <tr class="bt b--white bw3">
+          <td class="measure bg-light-red">
+            <img width="128" src="../../images/over-canvas.jpg" />
+          </td>
+          <td class="v-btm bg-black-025">
+            <code class="db f6 b">.v-btm</code>
+            Align text to the bottom.
+          </td>
+        </tr>
+      </tbody></table>
+    <h4 class="f4 mt5">Inline-block Alignment</h4>
+    <h5 class="f5 mt4">Align to the top</h5>
+    <code class="f6 pre db b">
+      &lt;p class="dib v-top"&gt;Content&lt;/p&gt; &lt;p class="dib
+      v-top"&gt;Content&lt;/p&gt; &lt;p class="dib v-top"&gt;Content&lt;/p&gt;
+    </code>
+    <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+      <p class="f6 measure-narrow dib v-top mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light if you want to be really fancy. Or you can say it
+        with the Extra Bold if it’s really intensive and passionate, you know,
+        and it might work.
+      </p>
+      <p class="f6 measure-narrow dib v-top mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light…
+      </p>
+      <p class="f6 measure-narrow dib v-top outline">
+        if you want to be really fancy. Or you can say it with the Extra Bold if
+        it’s really intensive and passionate, you know, and it might work.
+      </p>
+    </div>
+    <h5 class="f5 mt5">Mix and match</h5>
+    <code class="f6 pre db b">
+      &lt;p class="dib v-top"&gt;Content&lt;/p&gt; &lt;p class="dib
+      v-btm"&gt;Content&lt;/p&gt; &lt;p class="dib v-top"&gt;Content&lt;/p&gt;
+    </code>
+    <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+      <p class="f6 measure-narrow dib v-top mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light if you want to be really fancy. Or you can say it
+        with the Extra Bold if it’s really intensive and passionate, you know,
+        and it might work.
+      </p>
+      <p class="f6 measure-narrow dib v-btm mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light…
+      </p>
+      <p class="f6 measure-narrow dib v-top outline">
+        if you want to be really fancy. Or you can say it with the Extra Bold if
+        it’s really intensive and passionate, you know, and it might work.
+      </p>
+    </div>
+    <h5 class="f5 mt5">Align to the middle</h5>
+    <code class="f6 pre db b">
+      &lt;p class="dib v-mid"&gt;Content&lt;/p&gt; &lt;p class="dib
+      v-mid"&gt;Content&lt;/p&gt; &lt;p class="dib v-mid"&gt;Content&lt;/p&gt;
+    </code>
+    <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+      <p class="f6 measure-narrow dib v-mid mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light if you want to be really fancy. Or you can say it
+        with the Extra Bold if it’s really intensive and passionate, you know,
+        and it might work.
+      </p>
+      <p class="f6 measure-narrow dib v-mid mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light…
+      </p>
+      <p class="f6 measure-narrow dib v-mid outline">
+        if you want to be really fancy.
+      </p>
+    </div>
+    <h5 class="f5 mt5">Align to the bottom</h5>
+    <code class="f6 pre db b">
+      &lt;p class="dib v-btm"&gt;Content&lt;/p&gt; &lt;p class="dib
+      v-btm"&gt;Content&lt;/p&gt; &lt;p class="dib v-btm"&gt;Content&lt;/p&gt;
+    </code>
+    <div class="pl4-l bl-l bw2-l b--black-10 mt4">
+      <p class="f6 measure-narrow dib v-btm mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light if you want to be really fancy. Or you can say it
+        with the Extra Bold if it’s really intensive and passionate, you know,
+        and it might work.
+      </p>
+      <p class="f6 measure-narrow dib v-btm mr4 outline">
+        You can say, “I love you,” in Helvetica. And you can say it with
+        Helvetica Extra Light…
+      </p>
+      <p class="f6 measure-narrow dib v-btm outline">
+        if you want to be really fancy.
+      </p>
+    </div>
+  </div>
+</main>
+
+<!--DO NOT REMOVE-->
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>vertical-align.md</h1>\n","patternBreadcrumb":{"patternGroup":"Atoms","patternSubgroup":"typography"},"patternExtension":"hbs","patternName":"Vertical Align","patternPartial":"Atoms-vertical-align","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":7}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<h1>vertical-align.md</h1>\n","patternBreadcrumb":{"patternGroup":"Atoms","patternSubgroup":"typography"},"patternExtension":"hbs","patternName":"Vertical Align","patternPartial":"Atoms-vertical-align","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":7}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1669756226287">
+  (function() {
+    if (self != top) {
+      var cb = '1669756226287';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1669756226287" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+</body>
+</html>
