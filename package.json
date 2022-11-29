@@ -31,6 +31,16 @@
   "license": "ISC",
   "devDependencies": {
     "backstopjs": "^6.1.4",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier-standard": "^4.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.6",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
     "prettier": "^2.7.1",
     "sass": "^1.56.1",
     "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru"
