@@ -1,27 +1,21 @@
 {
+  "author": "bnjmnrsh",
   "name": "tachyons-sass-haru-lib-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test suite for tachyons-sass-haru",
-  "main": "index.js",
+  "license": "ISC",
   "scripts": {
-    "backstop:approve": "backstop approve --config=tests/mainConfig.js",
-    "backstop:test": "npm run clean:bitmaps_test && backstop test --config=tests/mainConfig.js",
-    "clean:bitmaps_test": "rm -rf test/backstop_data/bitmaps_test",
-    "test": "npm run backstop:test",
-    "build:tachyons": "sass ./node_modules/tachyons-sass-haru/tachyons.scss ./source/css/vendor/tachyons.css",
-    "build:uikit": "cross-env-shell PL_CONFIG_PATH='${INIT_CWD}/.patternlabrc.js' npm run build --prefix node_modules/@pattern-lab/uikit-workshop -- --patternlabrc '$PL_CONFIG_PATH'",
-    "build": "patternlab build --config ./patternlab-config.json",
-    "help": "patternlab --help",
-    "install": "patternlab install --config ./patternlab-config.json",
-    "serve": "patternlab serve --config ./patternlab-config.json",
-    "start": "npm run pl:serve",
-    "version": "patternlab --version",
-    "dev": "node ./node_modules/@pattern-lab/uikit-workshop/build-tools.js",
-    "pl:build": "patternlab build --config ./patternlab-config.json",
-    "pl:help": "patternlab --help",
-    "pl:install": "patternlab install --config ./patternlab-config.json",
-    "pl:serve": "patternlab serve --config ./patternlab-config.json",
-    "pl:version": "patternlab --version"
+    "setup": "run-s tachyons:build patternlab:setup patternlab:build",
+    "tests": "backstop test --config=tests/mainConfig.js",
+    "tests:approve": "backstop approve --config=tests/mainConfig.js",
+    "test:clean": "rm -rf test/backstop_data/bitmaps_test",
+    "tests:report": "backstop openReport",
+    "tachyons:build": "sass ./node_modules/tachyons-sass-haru/tachyons.scss ./source/css/vendor/tachyons-haru.css",
+    "patternlab:build": "patternlab build --config ./patternlab-config.json",
+    "patternlab:start": "patternlab serve --config ./patternlab-config.json",
+    "patternlab:setup": "patternlab install --config ./patternlab-config.json",
+    "patternlab:help": "patternlab --help",
+    "patternlab:version": "patternlab --version"
   },
   "repository": {
     "type": "git",
@@ -30,28 +24,26 @@
   "engines": {
     "node": ">=20.x.x"
   },
+  "dependencies": {
+    "@pattern-lab/cli": "^6.1.0",
+    "@pattern-lab/core": "^6.1.0",
+    "@pattern-lab/uikit-workshop": "^6.1.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.77.4",
+    "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru"
+  },
   "devDependencies": {
-    "backstopjs": "^6.1.4",
-    "eslint": "^8.28.0",
-    "eslint-config-prettier": "^8.5.0",
+    "backstopjs": "^6.3.23",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-config-prettier-standard": "^4.0.1",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.1.6",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.6.0",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "prettier": "^2.7.1"
-  },
-  "dependencies": {
-    "sass": "^1.56.1",
-    "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru",
-    "@pattern-lab/cli": "^5.17.0",
-    "@pattern-lab/core": "^5.17.0",
-    "@pattern-lab/engine-handlebars": "^5.16.4",
-    "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.3",
-    "@pattern-lab/starterkit-twig-demo": "^5.16.4",
-    "@pattern-lab/uikit-workshop": "^5.17.0"
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.2.0",
+    "prettier": "^3.3.1"
   }
 }
