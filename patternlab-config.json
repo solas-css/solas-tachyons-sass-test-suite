@@ -87,7 +87,7 @@
     {
       "name": "uikit-workshop",
       "package": "@pattern-lab/uikit-workshop",
-      "outputDir": "",
+      "outputDir": "./public",
       "enabled": true,
       "excludedPatternStates": [],
       "excludedTags": []
