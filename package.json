@@ -27,8 +27,9 @@
     "type": "git",
     "url": "tachyons-sass-haru-test-suite"
   },
-  "author": "bnjmnrsh",
-  "license": "ISC",
+  "engines": {
+    "node": ">=20.x.x"
+  },
   "devDependencies": {
     "backstopjs": "^6.1.4",
     "eslint": "^8.28.0",
