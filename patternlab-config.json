@@ -31,7 +31,6 @@
     "rawTemplate": "",
     "markupOnly": ".markup-only"
   },
-
   "paths": {
     "source": {
       "root": "./source/",
