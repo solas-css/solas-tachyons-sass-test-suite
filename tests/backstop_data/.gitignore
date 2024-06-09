@@ -1,0 +1,4 @@
+/bitmaps_test/*
+/html_report/*
+
+!.gitignore
