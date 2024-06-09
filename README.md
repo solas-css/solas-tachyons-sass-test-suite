@@ -38,11 +38,11 @@ npm run patternlab:version  # patternlab version
 PatternLab: `./paternlab-config.json`
 BackstopJS: `./tests/basicConfig.js`,`./tests/mainConfig.js`
 
-### Changing Tachyons version
+### Changing Tachyons versions
 
-`source/_meta/_head.hbs` contains hard links to Tachyons v4.12.0. via unpkg.com.
-Comment out this link and uncomment the link to the local build of Tachyons-haru instead.
-Run `npm run tachyons:build` to build the latest main branch of tachyons-sass-haru, this will already be installed via npm run setup.
+The template `source/_meta/_head.hbs` contains hard links to Tachyons v4.12.0. via unpkg.com, as well as the local build of Tachyons-haru in `./source/css/vendor/tachyons-haru.css`. Simply comment out the one that you wish to run the project agains.
+
+The script `npm run tachyons:build` builds the latest main branch of tachyons-sass-haru, installed as a dependancy, and built automatically via `npm run setup`.
 
 ### Adding new patterns and tests
 
