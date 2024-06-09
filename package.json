@@ -30,7 +30,7 @@
     "@pattern-lab/uikit-workshop": "^6.1.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.77.4",
-    "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru"
+    "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru#v0.0.2"
   },
   "devDependencies": {
     "backstopjs": "^6.3.23",
