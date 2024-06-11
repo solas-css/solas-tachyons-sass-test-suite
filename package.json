@@ -28,12 +28,12 @@
     "@pattern-lab/cli": "^6.1.0",
     "@pattern-lab/core": "^6.1.0",
     "@pattern-lab/uikit-workshop": "^6.1.0",
+    "backstopjs": "^6.3.23",
     "npm-run-all": "^4.1.5",
     "sass": "^1.77.4",
     "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru#@use"
   },
   "devDependencies": {
-    "backstopjs": "^6.3.23",
     "eslint": "^8",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-prettier-standard": "^4.0.1",
