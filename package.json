@@ -1,8 +1,8 @@
 {
   "author": "bnjmnrsh",
-  "name": "tachyons-sass-haru-lib-test",
+  "name": "solas-tachyons-sass-lib-test",
   "version": "0.0.2",
-  "description": "Test suite for tachyons-sass-haru",
+  "description": "Test suite for solas-tachyons-sass",
   "license": "ISC",
   "scripts": {
     "setup": "run-s tachyons:build patternlab:setup patternlab:build",
@@ -10,7 +10,7 @@
     "tests:approve": "backstop approve --config=tests/mainConfig.js",
     "test:clean": "rm -rf test/backstop_data/bitmaps_test",
     "tests:report": "backstop openReport",
-    "tachyons:build": "sass ./node_modules/tachyons-sass-haru/tachyons.scss ./source/css/vendor/tachyons-haru.css",
+    "tachyons:build": "sass ./node_modules/solas-tachyons-sass/tachyons.scss ./source/css/vendor/solas-tachyons.css",
     "patternlab:build": "patternlab build --config ./patternlab-config.json",
     "patternlab:start": "patternlab serve --config ./patternlab-config.json",
     "patternlab:setup": "patternlab install --config ./patternlab-config.json",
@@ -30,7 +30,7 @@
     "@pattern-lab/uikit-workshop": "^6.1.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.77.4",
-    "tachyons-sass-haru": "github:tachyons-haru/tachyons-sass-haru#v0.0.2"
+    "solas-tachyons-sass": "github:tachyons/solas-tachyons-sass#v0.0.2"
   },
   "devDependencies": {
     "backstopjs": "^6.3.23",
