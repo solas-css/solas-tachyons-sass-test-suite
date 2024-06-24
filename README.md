@@ -1,18 +1,18 @@
-# Tachyons-Haru Test Suite
+# Solas-Tachyons Test Suite
 
-A visual regression test suite for Tachyons-Haru built using [Pattern Lab](https://patternlab.io/) and [BackstopJS](https://github.com/garris/BackstopJS).
+A visual regression test suite for Solas-Tachyons built using [Pattern Lab](https://patternlab.io/) and [BackstopJS](https://github.com/garris/BackstopJS).
 
 The primary goal of this test suite is to test possible regressions against the last major Tachyons build [v4.12.0](https://github.com/tachyons-css/tachyons/), released on [npm](https://www.npmjs.com/package/tachyons).
 
-This suite is largely a subset of the Tachyons documentation. Eventually, as Tachyons-Haru diverges from the parent project, we will expand this into a more comprehensive documentation source for Tachyons-Haru.
+This suite is largely a subset of the Tachyons documentation. Eventually, as Solas-Tachyons diverges from the parent project, we will expand this into a more comprehensive documentation source for Solas-Tachyons.
 
 ## Getting Started
 
 To build the suite:
 
 ```bash
-git clone https://github.com/tachyons-haru/tachyons-sass-haru-test-suite.git
-cd tachyons-sass-haru-test-suite
+git clone https://github.com/solas-css/solas-tachyons-sass-test-suite.git
+cd solas-tachyons-sass-test-suite
 npm install
 npm run setup
 ```
@@ -40,9 +40,9 @@ BackstopJS: `./tests/basicConfig.js`,`./tests/mainConfig.js`
 
 ### Changing Tachyons versions
 
-The template `source/_meta/_head.hbs` contains hard links to Tachyons v4.12.0. via unpkg.com, as well as the local build of Tachyons-haru in `./source/css/vendor/tachyons-haru.css`. Simply comment out the one that you wish to run the project agains.
+The template `source/_meta/_head.hbs` contains hard links to Tachyons v4.12.0. via unpkg.com, as well as the local build of Solas-Tachyons in `./source/css/vendor/solas-tachyons.css`. Simply comment out the one that you wish to run the project agains.
 
-The script `npm run tachyons:build` builds the latest main branch of tachyons-sass-haru, installed as a dependancy, and built automatically via `npm run setup`.
+The script `npm run tachyons:build` builds the latest main branch of solas-tachyons-sass, installed as a dependancy, and built automatically via `npm run setup`.
 
 ### Adding new patterns and tests
 
